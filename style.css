@@ -179,9 +179,13 @@ main section:nth-child(3) {
 
 }
 
-p.legendaStreamer,
-p.legendaJogo {
-    animation: appear .6s 1.5s backwards;
+p.legendaJogo,
+p.legendaStreamer {
+    animation: appear 1.8s backwards;
+}
+
+p.legendaStreamer {
+    animation-delay: .8s;
 }
 
 @keyframes appear {
