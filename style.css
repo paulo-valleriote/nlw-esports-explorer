@@ -120,6 +120,17 @@ section ul li:hover {
     filter: invert();
 }
 
+p.legendaJogo {
+    font-size: 14px;
+    margin-left: 30%;
+}
+
+p.legendaStreamer {
+    font-size: 12px;
+    margin-left: -6%;
+    text-align: center;
+}
+
 /* animation */
 
 header div {
@@ -166,4 +177,21 @@ main section:nth-child(3) {
         transform: translateY(0);
     }
 
+}
+
+p.legendaStreamer,
+p.legendaJogo {
+    animation: appear .6s 1.5s backwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
